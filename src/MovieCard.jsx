@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
+const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type, Plot } }) => {
     return (
       <div className="movie" key={imdbID}>
         <div>
@@ -14,6 +14,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
         <div>
           <span>{Type}</span>
           <h3>{Title}</h3>
+          <h1>{Plot}</h1>
         </div>
       </div>
     );
